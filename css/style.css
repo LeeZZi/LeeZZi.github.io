@@ -1,0 +1,78 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    /* 背景图片 */
+    position: relative;
+    background-image: url("../background_pictures/img_1.jfif");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    /* 保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小 */
+    background-size: cover; 
+}
+
+.search_bar
+{
+    border: 0;
+    position: absolute;
+    top: 40%;
+	left: 50%;   
+    width: 300px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.search_back
+{
+    opacity: 0.5;
+    width: 300px;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+}
+
+#search_input
+{
+    position: absolute;
+    border: 0;
+    width: 270px;
+    height: 30px;
+    left: 0%;
+    outline: none;
+    border-radius: 15px 0 0 15px;
+
+    font-size: 95%;
+    color: black;         /* 字体颜色 */
+    letter-spacing: 1px;    /* 文字间距 */
+    text-indent: 12px;
+    background-color: transparent;
+
+}
+
+#search_submit
+{
+    position: relative;
+    border: 0;
+    outline: 0;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-image: url("../svg/search_icon.svg");
+    background-position: center center;
+    background-size: 83% 83%;
+    background-color: transparent;
+    border-radius: 0 15px 15px 0;
+    visibility: hidden;
+}
